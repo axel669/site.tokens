@@ -4,6 +4,14 @@ const token = tokenInfo.access_token ?? null
 const scopes = preact.signal([
     { scope: "chat:read", label: "Read Chat", checked: false },
     { scope: "chat:edit", label: "Send Chat Messages", checked: false },
+    { scope: "bits:read", label: "API: Read Bits Information", checked: false },
+    // { scope: "channel:moderate", label: "Moderate Channel", checked: false },
+    { scope: "channel:manage:broadcast", label: "API: Manage Stream Information", checked: false },
+    { scope: "channel:manage:redemptions", label: "API: Manage Custom Redeems", checked: false },
+    { scope: "channel:read:redemptions", label: "API: Read Custom Redeems", checked: false },
+    { scope: "moderator:manage:chat_messages", label: "API: Moderate Chat", checked: false },
+    { scope: "moderator:manage:chat_settings", label: "API: Edit Chat Mode", checked: false },
+    { scope: "moderator:manage:shoutouts", label: "API: Send Shoutouts", checked: false },
 ])
 const scopeString = preact.computed(
     () => {
