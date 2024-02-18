@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=5,minimum-scale=1,width=device-width">
+        <title>Shion Token Generator</title>
+    </head>
+    <body ws-x="@theme:tron">
+        <script>
+            const params = new URLSearchParams(location.hash.slice(1))
+            window.tokenInfo = Object.fromEntries(params.entries())
+
+            history.replaceState(null, null, location.pathname)
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@axel669/windstorm@0.3.8/dist/browser.js"></script>
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
