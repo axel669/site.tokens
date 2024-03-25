@@ -1,6 +1,6 @@
-import { html } from "https://esm.sh/htm/preact"
-import * as preactCore from "https://esm.sh/htm/preact"
-import * as preactSignal from "https://esm.sh/@preact/signals"
+import { html } from "https://esm.sh/htm@3.1.1/preact"
+import * as preactCore from "https://esm.sh/htm@3.1.1/preact"
+import * as preactSignal from "https://esm.sh/@preact/signals@1.2.2"
 
 window.html = html
 window.preact = { ...preactCore, ...preactSignal }
