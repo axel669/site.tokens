@@ -12,6 +12,9 @@ const scopes = preact.signal([
     { scope: "moderator:manage:chat_messages", label: "API: Moderate Chat", checked: false },
     { scope: "moderator:manage:chat_settings", label: "API: Edit Chat Mode", checked: false },
     { scope: "moderator:manage:shoutouts", label: "API: Send Shoutouts", checked: false },
+    { scope: "moderator:read:followers", label: "EventSub: See Follows", checked: false },
+    { scope: "channel:read:subscriptions", label: "EventSub: See Subs", checked: false },
+    { scope: "channel:read:hype_train", label: "EventSub: See Hype Trains", checked: false },
 ])
 const scopeString = preact.computed(
     () => {
